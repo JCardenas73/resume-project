@@ -1,0 +1,319 @@
+body{
+    background-color: white;
+    color: black;
+    font-family: "Cal Sans";
+
+    margin: 0;
+    padding: 0;
+}
+
+body h2{
+    font-size: 80px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(236, 79, 79);
+}
+
+
+hr{
+    background-color: red;
+    border-color: red;
+    width: 100%;
+    height: 5px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* 1 Main page */
+
+/* 1.1 Top left logo */
+
+.logo{
+    margin-left: 5%;
+    margin-top: 35px;
+    position: fixed;
+}
+
+.logo a{
+    font-size: 30px;
+    color:grey;
+
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.logo a:hover{
+    color:white;
+    background-color: black;
+    border: solid red;
+}
+
+/* 1.2 Photo - Motto */
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.left img{
+    
+    height: auto;
+    width: auto;
+    margin-left: 20%;
+    margin-top: 50px;
+    max-width: 555px;
+}
+
+.right blockquote{
+    font-size: 70px;
+    max-width: 50%;
+
+    padding-left: 20%;
+    
+}
+
+/* 2 Second part */
+
+.about{
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.about a:hover{
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+/* 2.1 Who is Juan? */
+
+.me-title h2{
+    margin-left: 150px;
+}
+
+.me-container{
+    display: flex;
+    align-items: center;
+}
+
+.me-description{
+    text-align: left;
+    margin-left: 150px;
+}
+
+.me-description h2{
+    font-size: 50px;
+}
+
+.me-image img{
+    width: 400px;
+    margin-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+}
+
+/* 2.2 Background - school and current */
+
+.backg{
+    display: flex;
+    align-items: center;
+    
+}
+
+.backg-description{
+    text-align: right;
+    margin-right: 150px;
+    margin-left: 100px;
+}
+
+.backg-image img{
+    width: 500px;
+    padding: 0;
+    margin-left: 150px;
+}
+
+/* 3 Education */
+
+.education{
+    margin-left: 150px;
+}
+
+/* 3.1 List of courses and education taken */
+
+.ed-list{
+    font-size: 30px;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+.ed-list li:nth-child(1){
+    list-style-image: url("images/leaderboard-trophy.png");
+}   
+
+.ed-list li:nth-child(2){
+    list-style-image: url("images/graduation-diploma.png");
+}   
+
+.ed-list 
+li:nth-child(3),
+li:nth-child(4),
+li:nth-child(5),
+li:nth-child(6),
+li:nth-child(7),
+li:nth-child(9),
+li:nth-child(10),
+li:nth-child(11){
+    list-style-image: url("images/certificate.png");
+}   
+
+li:nth-child(8){
+    list-style-image: url("images/elearning.png");
+}
+
+.ed-list a:hover{
+    font-family: "IBM Plex Mono";
+    font-weight: 1000;
+}
+
+.ed-list li:nth-child(11){
+    max-width: 85%;
+}
+
+/* 3.2 Languages section */
+
+.languages h3{
+    font-size: 60px;
+}
+
+.lang-breakdown{
+    font-size: 50px;
+    margin-left: 80px;
+}
+
+.lang-breakdown p{
+    font-style: italic;
+}
+
+.lang-breakdown h4{ 
+    word-spacing: 400px;
+    margin-left: 30px;
+    margin-right: 120px;
+}
+
+
+.lang-breakdown .spanish:hover{
+    background-image: url("images/flag.png");
+    background-size: contain;
+    text-shadow: -2px -2px 0 black,  
+         2px -2px 0 black,  
+        -2px  2px 0 black,  
+         2px  2px 0 black;
+    border-radius: 10px;
+}
+
+.lang-breakdown .english{
+    padding-right: 10px;
+    word-spacing: 415px;
+}
+
+.lang-breakdown .english:hover{
+    background-image: url("images/flagus.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: -2px -2px 0 black,  
+         2px -2px 0 black,  
+        -2px  2px 0 black,  
+         2px  2px 0 black;
+    border-radius: 10px;
+}
+
+.lang-breakdown .french{
+    word-spacing: 390px;
+}
+
+.lang-breakdown .french:hover{
+    background-image: url("images/flagfr.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: -2px -2px 0 black,  
+         2px -2px 0 black,  
+        -2px  2px 0 black,  
+         2px  2px 0 black;
+    border-radius: 10px;
+}
+
+.lang-breakdown h4:hover{
+    border: 2px solid black;  
+    color: white;
+}
+
+
+/* 4 Experience part */
+
+.experience{
+    background-color: black;
+    color: white;
+}
+
+.ex-title{
+    margin-left: 150px;
+    padding-top: 20px;
+}
+
+.ex-description{
+    margin-left: 25%;
+    font-size: 100px;
+    padding-bottom: 150px;
+}
+
+/* 5 Contact information */
+
+.contact{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.cont-title h2{
+    padding: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.contact-container{
+    text-align: center;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.social-icons a{
+    color: #000;
+    font-size: 48px;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icons a:hover{
+    transform: scale(1.1);
+    color: #ff000f;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+}
+
+.copy{
+    text-align: center;
+    padding: 20px;
+}
